@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+#Board {
+    width: 400px;
+    height: 400px;
+    position: fixed;
+    top: 10%;
+    left: 25%;
+}
+/* Cell styles */
+.cell {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    float: left;
+    text-align: center;
+}
+
+.cell.whiteCell {
+    background-color: rgb(250, 250, 250);
+}
+
+.cell.blackCell {
+    background-color: rgb(12, 7, 7);
+}
+
+.cell.blackCell.whitePiece {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.cell.blackCell.blackPiece {
+    color: gold;
+    text-align: center;
+    font-size: 30px;
+}
+
+.cell.blackCell.blackPiece.clicked,
+.cell.blackCell.whitePiece.clicked,
+.cell.blackCell.clicked {
+      -webkit-box-shadow: 0px 0px 10px 3px rgb(204, 46, 34);
+  -moz-box-shadow: 3px 3px 10px 5px rgb(190, 28, 22);
+  box-shadow: 3px 3px 10px 7px rgb(179, 29, 9);
+}
